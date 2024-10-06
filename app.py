@@ -123,7 +123,7 @@ def main():
     if st.button("Generate Feedback"):
         if uploaded_file is not None and job_role:
             # Save the uploaded file temporarily
-            with NamedTemporaryFile(delete=False) as temp_file:
+            with NamedTemporaryFile(delete=False, suffix=uploaded_file.name) as temp_file:
                 temp_file.write(uploaded_file.read())
                 resume_path = temp_file.name
 
