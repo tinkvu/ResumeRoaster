@@ -4,3 +4,4 @@ python-docx
 gtts
 pydub
 groq
+imageio[ffmpeg]
