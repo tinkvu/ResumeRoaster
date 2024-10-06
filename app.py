@@ -35,7 +35,7 @@ def generate_hr_conversation(resume_text, job_role, job_level):
     try:
         # Create a client instance for Groq
         client = Groq(
-            api_key=YOUR_API_KEY,  # Replace with your Groq API key
+            api_key=groqAPI,  # Replace with your Groq API key
         )
 
         # Define the prompt to pass to Llama3-8b-8192 model
